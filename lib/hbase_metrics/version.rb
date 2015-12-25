@@ -1,0 +1,3 @@
+module HBaseMetrics
+  VERSION = "0.1.0"
+end
