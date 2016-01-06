@@ -20,6 +20,7 @@ require 'hbase_metrics/hbase_master'
 master = HBaseMetrics::HMaster.new("localhost", 16010, false)
 puts JSON.pretty_generate(master.server)
 puts JSON.pretty_generate(master.assignment_manger)
+puts JSON.pretty_generate(master.ipc)
 ```
 
 ### RegionServer
