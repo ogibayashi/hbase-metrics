@@ -37,5 +37,9 @@ module HBaseMetrics
       }
     end
     
+    def ipc
+      query_jmx('Hadoop:service=HBase,name=RegionServer,sub=IPC').first
+    end
+
   end
 end

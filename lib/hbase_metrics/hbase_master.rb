@@ -11,6 +11,10 @@ module HBaseMetrics
     def assignment_manger
       query_jmx('Hadoop:service=HBase,name=Master,sub=AssignmentManger').first
     end
+
+    def ipc
+      query_jmx('Hadoop:service=HBase,name=Master,sub=IPC').first
+    end
     
   end
 end
