@@ -41,5 +41,9 @@ module HBaseMetrics
       query_jmx('Hadoop:service=HBase,name=RegionServer,sub=IPC').first
     end
 
+    def replication
+      query_jmx("Hadoop:service=HBase,name=RegionServer,sub=Replication").first
+    end
+    
   end
 end
