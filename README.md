@@ -8,6 +8,7 @@ hbase-metrics is a wrapper to collect metrics from HBase. It utilizes hadoop-met
 
 ```ruby
 gem install hadoop-metrics2
+gem install hbase-metrics
 ```
 
 ## Usage
